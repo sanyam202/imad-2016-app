@@ -80,7 +80,9 @@ function createTemplate(data){
     return htmlTemplate;    
     
 }
-app.get('/:articleName', function(req,res){
+app.get('/:articleName', function(req,res){articleName;
+    
+    var articleName = req.param.
    res.send(createTemplate(articles[articleName]));
 });
 
